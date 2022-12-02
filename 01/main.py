@@ -1,4 +1,7 @@
-with open('1-12-input.txt') as f:
+import os
+import sys
+
+with open(os.path.join(sys.path[0], "input.txt"), "r") as f:
     contents = [line.rstrip() for line in f]
 
 inventories = []
